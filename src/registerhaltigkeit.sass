@@ -4,14 +4,10 @@ $base-line-height: 22px
 $base-bg-color: rgba(240, 240, 240, .5)
 
 @import 'debug'
-@import 'layout'
+@import 'util'
 
 
 html, input, option, select, textarea, button
-  font-family: "Alto Pro", Helvetica, Arial, sans-serif
-
-  color: #3f3f3f
-
   -webkit-font-smoothing: subpixel-antialiased
   font-feature-settings: "kern" on, "liga" on, "calt" on, "onum", "pnum"
   -moz-font-feature-settings: "kern" on, "liga" on, "calt" on, "onum", "pnum"
@@ -53,8 +49,6 @@ h4, .fake-h4
 h5, .fake-h5, small, .small
   font-size: 0.8888888889 * $base-font-size
   line-height: $base-line-height
-
-
 
 h5, .fake-h5
   margin: $base-line-height 0 0 0
@@ -145,8 +139,7 @@ fieldset + fieldset
   letter-spacing: .05 * $base-font-size
   @extend small
 
-.tabular
-  font-feature-settings: "tnum"
+
 
 .form-group + .form-group
   margin-top: 1.5 * $base-line-height
@@ -177,4 +170,3 @@ input
 
 textarea.form-control
   height: 4 * ($base-line-height)
-
